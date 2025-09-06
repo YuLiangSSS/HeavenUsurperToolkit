@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -12,5 +12,12 @@
     <IncludeSymbols>false</IncludeSymbols>
     
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Deprecated\**" />
+    <EmbeddedResource Remove="Deprecated\**" />
+    <None Remove="Deprecated\**" />
+    <Page Remove="Deprecated\**" />
+  </ItemGroup>
 
 </Project>
