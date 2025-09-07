@@ -44,113 +44,113 @@ namespace HeavenUsurperToolkit
 
                 if (line.StartsWith("AudioFilename"))
                 {
-                    general.AudioFilename = line.Split(':').Last().Trim(); continue;
+                    general.AudioFilename = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("AudioLeadIn"))
                 {
-                    general.AudioLeadIn = line.Split(':').Last().Trim(); continue;
+                    general.AudioLeadIn = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("PreviewTime"))
                 {
-                    general.PreviewTime = line.Split(':').Last().Trim(); continue;
+                    general.PreviewTime = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("Countdown"))
                 {
-                    general.Countdown = line.Split(':').Last().Trim(); continue;
+                    general.Countdown = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("SampleSet"))
                 {
-                    general.SampleSet = line.Split(':').Last().Trim(); continue;
+                    general.SampleSet = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("StackLeniency"))
                 {
-                    general.StackLeniency = line.Split(':').Last().Trim(); continue;
+                    general.StackLeniency = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("Mode"))
                 {
-                    general.Mode = line.Split(':').Last().Trim(); continue;
+                    general.Mode = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("LetterboxInBreaks"))
                 {
-                    general.LetterboxInBreaks = line.Split(':').Last().Trim(); continue;
+                    general.LetterboxInBreaks = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("SpecialStyle"))
                 {
-                    general.SpecialStyle = line.Split(':').Last().Trim(); continue;
+                    general.SpecialStyle = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("WidescreenStoryboard"))
                 {
-                    general.WidescreenStoryboard = line.Split(':').Last().Trim(); continue;
+                    general.WidescreenStoryboard = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
 
                 // Metadata
 
                 if (line.StartsWith("TitleUnicode"))
                 {
-                    meta.TitleUnicode = line.Split(':').Last().Trim(); continue;
+                    meta.TitleUnicode = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("ArtistUnicode"))
                 {
-                    meta.ArtistUnicode = line.Split(':').Last().Trim(); continue;
+                    meta.ArtistUnicode = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("Title"))
                 {
-                    meta.Title = line.Split(':').Last().Trim(); continue;
+                    meta.Title = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("Artist"))
                 {
-                    meta.Artist = line.Split(':').Last().Trim(); continue;
+                    meta.Artist = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("Creator"))
                 {
-                    meta.Creator = line.Split(':').Last().Trim(); continue;
+                    meta.Creator = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("Version"))
                 {
-                    meta.Difficulty = line.Split(':').Last().Trim(); continue;
+                    meta.Difficulty = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("Source"))
                 {
-                    meta.Source = line.Split(':').Last().Trim(); continue;
+                    meta.Source = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("Tags"))
                 {
-                    meta.Tags = line.Split(':').Last().Trim(); continue;
+                    meta.Tags = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("BeatmapID"))
                 {
-                    meta.BeatmapID = line.Split(':').Last().Trim(); continue;
+                    meta.BeatmapID = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("BeatmapSetID"))
                 {
-                    meta.BeatmapSetID = line.Split(':').Last().Trim(); continue;
+                    meta.BeatmapSetID = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
 
                 // Difficulty
 
                 if (line.StartsWith("HPDrainRate"))
                 {
-                    general.HPDrainRate = double.Parse(line.Split(':').Last().Trim()); continue;
+                    general.HPDrainRate = double.Parse(line.Substring(line.IndexOf(':') + 1).Trim()); continue;
                 }
                 if (line.StartsWith("CircleSize"))
                 {
-                    general.CircleSize = double.Parse(line.Split(':').Last().Trim()); continue;
+                    general.CircleSize = double.Parse(line.Substring(line.IndexOf(':') + 1).Trim()); continue;
                 }
                 if (line.StartsWith("OverallDifficulty"))
                 {
-                    general.OverallDifficulty = double.Parse(line.Split(':').Last().Trim()); continue;
+                    general.OverallDifficulty = double.Parse(line.Substring(line.IndexOf(':') + 1).Trim()); continue;
                 }
                 if (line.StartsWith("ApproachRate"))
                 {
-                    general.ApproachRate = double.Parse(line.Split(':').Last().Trim()); continue;
+                    general.ApproachRate = double.Parse(line.Substring(line.IndexOf(':') + 1).Trim()); continue;
                 }
                 if (line.StartsWith("SliderMultiplier"))
                 {
-                    general.SliderMultiplier = double.Parse(line.Split(':').Last().Trim()); continue;
+                    general.SliderMultiplier = double.Parse(line.Substring(line.IndexOf(':') + 1).Trim()); continue;
                 }
                 if (line.StartsWith("SliderTickRate"))
                 {
-                    general.SliderTickRate = double.Parse(line.Split(':').Last().Trim()); continue;
+                    general.SliderTickRate = double.Parse(line.Substring(line.IndexOf(':') + 1).Trim()); continue;
                 }
 
                 // [HitObjects] & [TimingPoints] & [Colours] & [Events]
@@ -387,22 +387,22 @@ namespace HeavenUsurperToolkit
                 throw new InvalidOperationException("TimingPoints is empty.");
             }
 
-            TimingPoints = TimingPoints.Where(tp => tp.BeatLength >= 0).OrderBy(tp => tp.Time).ToList();
+            var RedPoints = TimingPoints.Where(tp => tp.BeatLength >= 0).OrderBy(tp => tp.Time).ToList();
 
-            if (TimingPoints.Count == 1)
+            if (RedPoints.Count == 1)
             {
-                return TimingPoints[0];
+                return RedPoints[0];
             }
 
-            for (int i = 0; i < TimingPoints.Count - 1; i++)
+            for (int i = 0; i < RedPoints.Count - 1; i++)
             {
-                if (TimingPoints[i].Time <= time && TimingPoints[i + 1].Time > time)
+                if (RedPoints[i].Time <= time && RedPoints[i + 1].Time > time)
                 {
-                    return TimingPoints[i];
+                    return RedPoints[i];
                 }
             }
 
-            return TimingPoints[TimingPoints.Count - 1];
+            return RedPoints[RedPoints.Count - 1];
         }
 
         public void ManiaToKeys(int Keys)
@@ -496,113 +496,113 @@ namespace HeavenUsurperToolkit
 
                 if (line.StartsWith("AudioFilename"))
                 {
-                    gener.AudioFilename = line.Split(':').Last().Trim(); continue;
+                    gener.AudioFilename = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("AudioLeadIn"))
                 {
-                    gener.AudioLeadIn = line.Split(':').Last().Trim(); continue;
+                    gener.AudioLeadIn = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("PreviewTime"))
                 {
-                    gener.PreviewTime = line.Split(':').Last().Trim(); continue;
+                    gener.PreviewTime = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("Countdown"))
                 {
-                    gener.Countdown = line.Split(':').Last().Trim(); continue;
+                    gener.Countdown = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("SampleSet"))
                 {
-                    gener.SampleSet = line.Split(':').Last().Trim(); continue;
+                    gener.SampleSet = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("StackLeniency"))
                 {
-                    gener.StackLeniency = line.Split(':').Last().Trim(); continue;
+                    gener.StackLeniency = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("Mode"))
                 {
-                    gener.Mode = line.Split(':').Last().Trim(); continue;
+                    gener.Mode = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("LetterboxInBreaks"))
                 {
-                    gener.LetterboxInBreaks = line.Split(':').Last().Trim(); continue;
+                    gener.LetterboxInBreaks = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("SpecialStyle"))
                 {
-                    gener.SpecialStyle = line.Split(':').Last().Trim(); continue;
+                    gener.SpecialStyle = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("WidescreenStoryboard"))
                 {
-                    gener.WidescreenStoryboard = line.Split(':').Last().Trim(); continue;
+                    gener.WidescreenStoryboard = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
 
                 // Metadata
 
                 if (line.StartsWith("TitleUnicode"))
                 {
-                    meta.TitleUnicode = line.Split(':').Last().Trim(); continue;
+                    meta.TitleUnicode = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("ArtistUnicode"))
                 {
-                    meta.ArtistUnicode = line.Split(':').Last().Trim(); continue;
+                    meta.ArtistUnicode = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("Title"))
                 {
-                    meta.Title = line.Split(':').Last().Trim(); continue;
+                    meta.Title = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("Artist"))
                 {
-                    meta.Artist = line.Split(':').Last().Trim(); continue;
+                    meta.Artist = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("Creator"))
                 {
-                    meta.Creator = line.Split(':').Last().Trim(); continue;
+                    meta.Creator = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("Version"))
                 {
-                    meta.Difficulty = line.Split(':').Last().Trim(); continue;
+                    meta.Difficulty = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("Source"))
                 {
-                    meta.Source = line.Split(':').Last().Trim(); continue;
+                    meta.Source = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("Tags"))
                 {
-                    meta.Tags = line.Split(':').Last().Trim(); continue;
+                    meta.Tags = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("BeatmapID"))
                 {
-                    meta.BeatmapID = line.Split(':').Last().Trim(); continue;
+                    meta.BeatmapID = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
                 if (line.StartsWith("BeatmapSetID"))
                 {
-                    meta.BeatmapSetID = line.Split(':').Last().Trim(); continue;
+                    meta.BeatmapSetID = line.Substring(line.IndexOf(':') + 1).Trim(); continue;
                 }
 
                 // Difficulty
 
                 if (line.StartsWith("HPDrainRate"))
                 {
-                    gener.HPDrainRate = double.Parse(line.Split(':').Last().Trim()); continue;
+                    gener.HPDrainRate = double.Parse(line.Substring(line.IndexOf(':') + 1).Trim()); continue;
                 }
                 if (line.StartsWith("CircleSize"))
                 {
-                    gener.CircleSize = double.Parse(line.Split(':').Last().Trim()); continue;
+                    gener.CircleSize = double.Parse(line.Substring(line.IndexOf(':') + 1).Trim()); continue;
                 }
                 if (line.StartsWith("OverallDifficulty"))
                 {
-                    gener.OverallDifficulty = double.Parse(line.Split(':').Last().Trim()); continue;
+                    gener.OverallDifficulty = double.Parse(line.Substring(line.IndexOf(':') + 1).Trim()); continue;
                 }
                 if (line.StartsWith("ApproachRate"))
                 {
-                    gener.ApproachRate = double.Parse(line.Split(':').Last().Trim()); continue;
+                    gener.ApproachRate = double.Parse(line.Substring(line.IndexOf(':') + 1).Trim()); continue;
                 }
                 if (line.StartsWith("SliderMultiplier"))
                 {
-                    gener.SliderMultiplier = double.Parse(line.Split(':').Last().Trim()); continue;
+                    gener.SliderMultiplier = double.Parse(line.Substring(line.IndexOf(':') + 1).Trim()); continue;
                 }
                 if (line.StartsWith("SliderTickRate"))
                 {
-                    gener.SliderTickRate = double.Parse(line.Split(':').Last().Trim()); continue;
+                    gener.SliderTickRate = double.Parse(line.Substring(line.IndexOf(':') + 1).Trim()); continue;
                 }
 
                 // [HitObjects] & [TimingPoints] & [Colours] & [Events]
