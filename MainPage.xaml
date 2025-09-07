@@ -13,10 +13,8 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <!-- 主页面内容 -->
         <StackPanel Margin="0,80,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="760" Width="171" FlowDirection="LeftToRight">
 
-            <!-- 导航按钮 -->
             <Button x:Name="TestButton" 
                 Content="Test"
                 Width="120" 
@@ -26,7 +24,6 @@
                 Visibility="Collapsed"
                 Style="{StaticResource ModernButton}" />
 
-            <!-- 导航按钮 -->
             <Button x:Name="BtnToLN" 
                 Content="LN"
                 Width="120" 
@@ -50,7 +47,5 @@
                 Style="{StaticResource ModernButton}" />
 
         </StackPanel>
-
-        <!-- 导航按钮 -->
     </Grid>
 </Page>
