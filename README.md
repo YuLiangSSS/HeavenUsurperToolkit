@@ -1,1 +1,1 @@
-﻿An easy tookit about osu!mania.
+﻿An easy toolkit about osu!mania.
