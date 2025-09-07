@@ -13,11 +13,4 @@
     
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Deprecated\**" />
-    <EmbeddedResource Remove="Deprecated\**" />
-    <None Remove="Deprecated\**" />
-    <Page Remove="Deprecated\**" />
-  </ItemGroup>
-
 </Project>
